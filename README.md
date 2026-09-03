@@ -86,12 +86,12 @@ Where:
 An equilibrium state is **dynamically stable** if and only if all eigenvalues have negative real parts:
 
 $$
-\operatorname{Re}(\lambda_i) < 0 \quad \forall i \in \{1, 2}\
+\text{Re}(\lambda_i) < 0 \quad \forall i \in \{1, 2}\
 $$
 
-A **Saddle-Node (Fold) Bifurcation** occurs at the critical dosing threshold $D_c$ where a zero real eigenvalue emerges:
+A **Saddle-Node (Fold) Bifurcation** occurs at the critical dosing threshold $D_crit$ where a zero real eigenvalue emerges:
 
-$$\det\Big(J(T^*, E^*; D_c)\Big) = 0$$
+$$\det\left(J(T^{\ast}, E^{\ast}; D_crit)\right) = 0$$
 
 ---
 
