@@ -67,23 +67,23 @@ Setting derivative rates to zero yields up to three distinct steady states depen
 ---
 ## Linearization & Stability Conditions
 
-The local stability of any steady state point $(T^{*}, E^{*})$ is governed by the eigenvalues $\lambda$ of the system's Jacobian matrix $J(T^{*}, E^{*})$:
+The local stability of any steady state point $(T^*, E^*)$ is governed by the eigenvalues $\lambda$ of the system's Jacobian matrix $J(T^*, E^*)$:
 
 $$
 J(T^*, E^*) = \begin{bmatrix}
-\frac{\partial (dT/dt)}{\partial T} & \frac{\partial (dT/dt)}{\partial E} \\[8pt]
-\frac{\partial (dE/dt)}{\partial T} & \frac{\partial (dE/dt)}{\partial E}
+J_{11} & J_{12} \\
+J_{21} & J_{22}
 \end{bmatrix}_{(T^*, E^*)}
 $$
 
 Where:
 
-* $J_{11} = a\left(1 - \frac{2T^*}{K}\right) - \frac{c E^*}{\left(1 + \eta T^* + \gamma (1 - f) T^*\right)^2}$
+* $J_{11} = a\left(1 - \frac{2 T^*}{K}\right) - \frac{c E^*}{\left(1 + \eta T^* + \gamma (1 - f) T^*\right)^2}$
 * $J_{12} = -\frac{c T^*}{1 + \eta T^* + \gamma (1 - f) T^*}$
 * $J_{21} = \frac{p E^* g}{(g + T^*)^2} - \mu E^* (1 - f(D))$
 * $J_{22} = \frac{p T^*}{g + T^*} - d_e - \mu T^* (1 - f(D))$
 
-An equilibrium state is **stable** if and only if all eigenvalues have negative real parts:
+An equilibrium state is **dynamically stable** if and only if all eigenvalues have negative real parts:
 
 $$
 \operatorname{Re}(\lambda_i) < 0 \quad \forall i \in \{1, 2\}
