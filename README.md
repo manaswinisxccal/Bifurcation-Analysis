@@ -1,4 +1,4 @@
-# Saddle-Node Bifurcation Analysis in Tumour-Immune Checkpoint Model
+# Saddle-Node Bifurcation Analysis in Tumour-Immune-Checkpoint-Inhibitor Model
 
 This repository implements a 2D non-linear system of ordinary differential equations (ODEs) derived from foundational paradigms in mathematical oncology (Kuznetsov et al., 1994). It models the non-linear dynamic interactions between an immunogenic tumour population ($T$) and active effector immune cells ($E$) under the influence of an immunotherapy drug dosage parameter ($D$).
 
