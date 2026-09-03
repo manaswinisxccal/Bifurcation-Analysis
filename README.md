@@ -67,7 +67,7 @@ Setting derivative rates to zero yields up to three distinct steady states depen
 ---
 ## Linearization & Stability Conditions
 
-The local stability of any steady state point $(T^{\ast}, E^{\ast})$ is governed by the eigenvalues $\lambda$ of the system's Jacobian matrix $J(T^*, E^*)$:
+The local stability of any steady state point $(T^{\ast}, E^{\ast})$ is governed by the eigenvalues $\lambda$ of the system's Jacobian matrix $J(T^{\ast}, E^{\ast})$:
 
 $$
 J(T^{\ast}, E^{\ast}) = \begin{bmatrix}
@@ -78,10 +78,10 @@ $$
 
 Where:
 
-* $J_{11} = a\left(1 - \frac{2 T^*}{K}\right) - \frac{c E^*}{\left(1 + \eta T^* + \gamma (1 - f) T^*\right)^2}$
-* $J_{12} = -\frac{c T^*}{1 + \eta T^* + \gamma (1 - f) T^*}$
-* $J_{21} = \frac{p E^* g}{(g + T^*)^2} - \mu E^* (1 - f(D))$
-* $J_{22} = \frac{p T^*}{g + T^*} - d_e - \mu T^* (1 - f(D))$
+* $J_{11} = a\left(1 - \frac{2 T^{\ast}}{K}\right) - \frac{c E^{\ast}}{\left(1 + \eta T^{\ast} + \gamma (1 - f) T^{\ast}\right)^2}$
+* $J_{12} = -\frac{c T^{\ast}}{1 + \eta T^{\ast} + \gamma (1 - f) T^{\ast}}$
+* $J_{21} = \frac{p E^{\ast} g}{(g + T^{\ast})^2} - \mu E^{\ast} (1 - f(D))$
+* $J_{22} = \frac{p T^{\ast}}{g + T^{\ast} - d_e - \mu T^{\ast} (1 - f(D))$
 
 An equilibrium state is **dynamically stable** if and only if all eigenvalues have negative real parts:
 
