@@ -65,26 +65,29 @@ Setting derivative rates to zero yields up to three distinct steady states depen
    Represents clinical progression and treatment failure.
 
 ---
-
 ## Linearization & Stability Conditions
 
-The local stability of any steady state point $$(T^*, E^*)$$ is governed by the eigenvalues $\lambda$ of the system's Jacobian matrix $$J(T^*, E^*)$$:
+The local stability of any steady state point $(T^*, E^*)$ is governed by the eigenvalues $\lambda$ of the system's Jacobian matrix $J(T^*, E^*)$:
 
-$$J(T^*, E^*) = \begin{bmatrix} 
-\frac{\partial (dT/dt)}{\partial T} & \frac{\partial (dT/dt)}{\partial E} \\
+$$
+J(T^*, E^*) = \begin{bmatrix}
+\frac{\partial (dT/dt)}{\partial T} & \frac{\partial (dT/dt)}{\partial E} \\[8pt]
 \frac{\partial (dE/dt)}{\partial T} & \frac{\partial (dE/dt)}{\partial E}
-\end{bmatrix}_{(T^*, E^*)}$$
+\end{bmatrix}
+$$
 
 Where:
-* $J_{11} = a\left(1 - \frac{2T^*}{K}\right) - \frac{c E^*}{1 + \eta T^* + \gamma (1 - f) T^*} + \frac{c E^* T^* (\eta + \gamma (1 - f))}{\left(1 + \eta T^* + \gamma (1 - f) T^*\right)^2}$
-* $J_{12} = -\frac{c T^*}{1 + \eta T^* + \gamma (1 - f) T^*}$
+
+* $J_{11} = a\left(1 - \frac{2T^*}{K}\right) - \frac{c E^*}{(1 + \eta T^*)^2}$
+* $J_{12} = -\frac{c T^*}{1 + \eta T^*}$
 * $J_{21} = \frac{p E^* g}{(g + T^*)^2} - \mu E^* (1 - f(D))$
 * $J_{22} = \frac{p T^*}{g + T^*} - d_e - \mu T^* (1 - f(D))$
 
 An equilibrium state is **stable** if and only if all eigenvalues have negative real parts:
 
-$$\operatorname{Re}(\lambda_i) < 0 \quad \forall i \in \{1, 2\}$$
-
+$$
+\operatorname{Re}(\lambda_i) < 0 \quad \forall i \in \{1, 2\}
+$$
 A **Saddle-Node (Fold) Bifurcation** occurs at the critical dosing threshold $D_c$ where a zero real eigenvalue emerges:
 
 $$\det\Big(J(T^*, E^*; D_c)\Big) = 0$$
