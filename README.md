@@ -73,13 +73,13 @@ $$
 J(T^*, E^*) = \begin{bmatrix}
 \frac{\partial (dT/dt)}{\partial T} & \frac{\partial (dT/dt)}{\partial E} \\[8pt]
 \frac{\partial (dE/dt)}{\partial T} & \frac{\partial (dE/dt)}{\partial E}
-\end{bmatrix}
+\end{bmatrix}_{(T^*, E^*)}
 $$
 
 Where:
 
-* $J_{11} = a\left(1 - \frac{2T^*}{K}\right) - \frac{c E^*}{(1 + \eta T^*)^2}$
-* $J_{12} = -\frac{c T^*}{1 + \eta T^*}$
+* $J_{11} = a\left(1 - \frac{2T^*}{K}\right) - \frac{c E^*}{\left(1 + \eta T^* + \gamma (1 - f) T^*\right)^2}$
+* $J_{12} = -\frac{c T^*}{1 + \eta T^* + \gamma (1 - f) T^*}$
 * $J_{21} = \frac{p E^* g}{(g + T^*)^2} - \mu E^* (1 - f(D))$
 * $J_{22} = \frac{p T^*}{g + T^*} - d_e - \mu T^* (1 - f(D))$
 
