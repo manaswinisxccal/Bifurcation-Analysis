@@ -70,10 +70,10 @@ Setting derivative rates to zero yields up to three distinct steady states depen
 The local stability of any steady state point $(T^{\ast}, E^{\ast})$ is governed by the eigenvalues $\lambda$ of the system's Jacobian matrix $J(T^*, E^*)$:
 
 $$
-J(T^*, E^*) = \begin{bmatrix}
+J(T^{\ast}, E^{\ast}) = \begin{bmatrix}
 J_{11} & J_{12} \\
 J_{21} & J_{22}
-\end{bmatrix}_{(T^*, E^*)}
+\end{bmatrix}_{(T^{\ast}, E^{\ast})}
 $$
 
 Where:
