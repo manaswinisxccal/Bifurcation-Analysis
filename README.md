@@ -89,9 +89,9 @@ $$
 \text{Re}(\lambda_i) < 0 \quad \forall i \in \{1, 2}\
 $$
 
-A **Saddle-Node (Fold) Bifurcation** occurs at the critical dosing threshold $D_crit$ where a zero real eigenvalue emerges:
+A **Saddle-Node (Fold) Bifurcation** occurs at the critical dosing threshold $D_{\text{crit}}$ where a zero real eigenvalue emerges:
 
-$$\det\left(J(T^{\ast}, E^{\ast}; D_crit)\right) = 0$$
+$$\det\left(J(T^{\ast}, E^{\ast}; D_{\text{crit}})\right) = 0$$
 
 ---
 
