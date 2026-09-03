@@ -81,7 +81,7 @@ Where:
 * $J_{11} = a\left(1 - \frac{2 T^{\ast}}{K}\right) - \frac{c E^{\ast}}{\left(1 + \eta T^{\ast} + \gamma (1 - f) T^{\ast}\right)^2}$
 * $J_{12} = -\frac{c T^{\ast}}{1 + \eta T^{\ast} + \gamma (1 - f) T^{\ast}}$
 * $J_{21} = \frac{p E^{\ast} g}{(g + T^{\ast})^2} - \mu E^{\ast} (1 - f(D))$
-* $J_{22} = \frac{p T^{\ast}}{g + T^{\ast} - d_e - \mu T^{\ast} (1 - f(D))$
+* $J_{22} = \frac{p T^{\ast}}{g + T^{\ast} - d_e - \mu T^{\ast} (1 - f(D))}$
 
 An equilibrium state is **dynamically stable** if and only if all eigenvalues have negative real parts:
 
